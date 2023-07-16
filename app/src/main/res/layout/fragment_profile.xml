@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment.ProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:elevation="3dp"
+            android:background="@drawable/background_title">
+
+            <ImageButton
+                android:id="@+id/date_previous"
+                style="@style/MaterialAlertDialog.Material3.Title.Icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_previous"
+                app:backgroundTint="@color/transparent"
+                app:tint="@color/icons"
+                />
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="DD/MM/YYYY"
+                android:textStyle="bold"
+                android:textColor="@color/icons"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/date_next"
+                style="@style/MaterialAlertDialog.Material3.Title.Icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_next"
+                app:backgroundTint="@color/transparent"
+                app:tint="@color/icons"
+                />
+
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4"
+            android:elevation="2dp"
+            app:cardCornerRadius="30sp"
+            android:paddingHorizontal="15dp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_centerInParent="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Calorie Budget"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/energy_max_LBL"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4000"
+                                    android:textColor="@color/icons"
+                                    android:textSize="23sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/setting"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_edit"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="3dp"
+                                    app:tint="@color/icons" />
+
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+
+
+                        >
+
+                        <ProgressBar
+                            android:id="@+id/energy_progress_circular_profileFragment"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:indeterminate="false"
+                            android:padding="27dp"
+                            android:progressDrawable="@drawable/custom_progress_bg_green"
+
+
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/energy_current_LBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textColor="@color/green"
+                                android:textSize="30sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="25dp"
+                                android:text="Left"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/energy_current_left_LBL"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="200"
+                                android:textColor="@color/text_secondary"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Protein"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/protein_LBL_profileFragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/icons"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|start"
+                            android:text="Carbs"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/carbs_LBL_profileFragment"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/icons"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fat"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/fat_LBL_profileFragment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/icons"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/profile_RCV_dailyFood"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            tools:listitem="@layout/recycle_view_daily_food"
+            android:layout_marginHorizontal="10dp"
+            />
+
+
+    </LinearLayout>
+
+</layout>

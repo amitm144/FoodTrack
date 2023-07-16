@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.NewUserActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="\t\t\t\tWelcome to
+            \n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\tFoodTrack"
+            android:layout_marginVertical="20dp"
+            android:textColor="@color/icons"
+            android:textSize="40sp"
+            android:lines="2"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="20sp"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First Name"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/icons"
+                        android:textColorHint="@color/icons"
+                        android:gravity="center"
+                        android:textSize="25dp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="20sp"
+
+
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/icons"
+                        android:textColorHint="@color/icons"
+                        android:gravity="center"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="40dp"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calorie Budget"
+                    android:layout_gravity="center"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal">
+                    <SeekBar
+                        android:id="@+id/calorieBudget"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:layout_gravity="center"
+                        android:max="6000"
+                        android:progress="2000"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/calorieBudgetLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/icons"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="5dp"
+                android:gravity="center"
+                android:text="Join"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:backgroundTint="@color/icons"
+                android:textColor="@color/white"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logofoodtracker"
+            android:layout_below="@+id/body"
+            android:layout_margin="50dp"/>
+
+
+
+    </RelativeLayout>
+</layout>

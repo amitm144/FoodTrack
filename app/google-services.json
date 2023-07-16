@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "438527966849",
+    "firebase_url": "https://food-track-4cc68-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "food-track-4cc68",
+    "storage_bucket": "food-track-4cc68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438527966849:android:036db39f46d9bec0789780",
+        "android_client_info": {
+          "package_name": "com.example.foodtrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApkwXX4wI9kmK_qo-4l0BFbxg7IRztbjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

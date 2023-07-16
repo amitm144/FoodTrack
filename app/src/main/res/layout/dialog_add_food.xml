@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment.ProfileFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        app:cardCornerRadius="30sp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="DD/MM/YYYY"
+                android:textColor="@color/icons"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/foodName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="Item"
+                    android:textColor="@color/text_primary"
+                    android:autoSizeTextType="uniform"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                <TextView
+                    android:id="@+id/grams_LBL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gram"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"
+
+                    />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/grams_seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:progress="100"
+                android:max="400"
+                android:min="1"
+                android:progressBackgroundTint="@color/icons"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Energy"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/energy_LBL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:textColor="@color/icons"
+                            android:textColorHint="@color/icons"
+                            android:textSize="25dp" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Protein"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/protein_LBL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:textColor="@color/icons"
+                            android:textColorHint="@color/icons"
+                            android:textSize="25dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Carbs"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/carbs_LBL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:textColor="@color/icons"
+                            android:textColorHint="@color/icons"
+                            android:textSize="25dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fat"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:id="@+id/fat_LBL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:hint="0"
+                            android:inputType="number"
+                            android:maxLength="5"
+                            android:textColor="@color/icons"
+                            android:textColorHint="@color/icons"
+                            android:textSize="25dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/add_BTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="20dp"
+                android:gravity="center"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:backgroundTint="@color/icons"
+                android:textColor="@color/white"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>
